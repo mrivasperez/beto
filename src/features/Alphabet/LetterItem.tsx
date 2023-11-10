@@ -11,8 +11,10 @@ const styles = StyleSheet.create({
     padding: 18,
     backgroundColor: '#fafafa',
     borderRadius: 6,
-    width: 64,
-    height: 64,
+    width: 72,
+    height: 72,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   LetterItemText: {
     color: light.black900,
