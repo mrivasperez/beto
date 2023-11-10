@@ -1,4 +1,4 @@
-export interface Letter {
+export type Letter {
   value: string;
   index: number;
   data: {
