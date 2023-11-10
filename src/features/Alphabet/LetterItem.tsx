@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
   LetterItemText: {
     color: light.black900,
     fontSize: 24,
+    fontWeight: '600',
   },
 });
 
