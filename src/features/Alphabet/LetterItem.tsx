@@ -3,7 +3,8 @@ import React from 'react';
 import {light} from '../../styles/palette';
 import {Letter} from './types';
 import {useNavigation} from '@react-navigation/native';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {StackNavigation} from '../../App';
+
 const styles = StyleSheet.create({
   LetterContainer: {
     margin: 12,
@@ -22,8 +23,7 @@ const styles = StyleSheet.create({
 });
 
 const LetterItem = ({letterData}: {letterData: Letter}) => {
-  // TODO resolve type error
-  const navigation = useNavigation<NativeStackNavigationProp<any>>();
+  const navigation = useNavigation<StackNavigation>();
 
   const handlePressLetter = () => {
     navigation.navigate('LetterDetail', {letterIndex: letterData.index});

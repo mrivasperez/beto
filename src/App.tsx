@@ -1,10 +1,17 @@
-import {StyleSheet} from 'react-native';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, NavigationProp} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Alphabet from './features/Alphabet/Alphabet';
 import LetterDetail from './features/LetterDetail/LetterDetail';
-const Stack = createNativeStackNavigator();
+
+export type RootStackParamList = {
+  Alphabet: undefined;
+  LetterDetail: {letterIndex: number};
+};
+
+export type StackNavigation = NavigationProp<RootStackParamList>;
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const App = () => {
   return (
@@ -26,5 +33,3 @@ const App = () => {
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
