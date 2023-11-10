@@ -1,4 +1,4 @@
-Beta is an application designed to help Spanish-speaking adults learn how to read.
+Beto is an application designed to help Spanish-speaking adults learn how to read.
 
 # Getting Started
 
