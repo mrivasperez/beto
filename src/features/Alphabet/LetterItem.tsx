@@ -27,7 +27,10 @@ const LetterItem = ({letterData}: {letterData: Letter}) => {
   const navigation = useNavigation<StackNavigation>();
 
   const handlePressLetter = () => {
-    navigation.navigate('LetterDetail', {letterIndex: letterData.index});
+    navigation.navigate('LetterDetail', {
+      letterIndex: letterData.index,
+      letterValue: `${letterData.value.toUpperCase()}${letterData.value}`,
+    });
   };
 
   return (

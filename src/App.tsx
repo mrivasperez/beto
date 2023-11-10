@@ -7,7 +7,7 @@ import LetterDetail from './features/LetterDetail/LetterDetail';
 // Define navigation routes and params
 export type RootStackParamList = {
   Alphabet: undefined;
-  LetterDetail: {letterIndex: number};
+  LetterDetail: {letterIndex: number; letterValue: string};
 };
 
 // Define global navigation props
@@ -28,7 +28,11 @@ const App = () => {
         <Stack.Screen
           name="LetterDetail"
           component={LetterDetail}
-          // options={{headerShown: false}}
+          options={({route}) => ({
+            title: String(route.params.letterValue),
+            headerBackTitleVisible: false,
+            headerTitleStyle: {fontSize: 24},
+          })}
         />
       </Stack.Navigator>
     </NavigationContainer>
