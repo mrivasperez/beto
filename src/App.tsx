@@ -4,13 +4,16 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Alphabet from './features/Alphabet/Alphabet';
 import LetterDetail from './features/LetterDetail/LetterDetail';
 
+// Define navigation routes and params
 export type RootStackParamList = {
   Alphabet: undefined;
   LetterDetail: {letterIndex: number};
 };
 
+// Define global navigation props
 export type StackNavigation = NavigationProp<RootStackParamList>;
 
+// Create navigation stack
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const App = () => {
