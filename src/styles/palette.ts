@@ -1,0 +1,17 @@
+export const light = {
+  black900: '#000000',
+  black700: '#1a1a1a',
+  black500: '#333333',
+  black300: '#4d4d4d',
+  black100: '#636363',
+  blueberry900: '#002e99',
+  blueberry700: '#0d52bf',
+  blueberry500: '#3689e6',
+  blueberry300: '#64baff',
+  blueberry100: '#8cd5ff',
+  strawberry900: '#7a0000',
+  strawberry700: '#a10705',
+  strawberry500: '#c6262e',
+  strawberry300: '#ed5353',
+  strawberry100: '#ff8c82',
+};
