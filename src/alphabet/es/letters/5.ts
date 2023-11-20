@@ -3,27 +3,37 @@ const letter5Data = {
     {
       word: 'familia',
       sentence: 'La familia se reúne los domingos para comer.',
-      image: 'path/to/image_of_familia.jpg', // Replace with actual path to the image
+      image: require('../img/familia.jpeg'),
+      wordMp3: require('../mp3/words/familia.mp3'),
+      sentenceMp3: require('../mp3/sentences/familia.mp3'),
     },
     {
       word: 'fuego',
       sentence: 'Los bomberos apagaron el fuego rápidamente.',
-      image: 'path/to/image_of_fuego.jpg', // Replace with actual path to the image
+      image: require('../img/fuego.jpeg'),
+      wordMp3: require('../mp3/words/fuego.mp3'),
+      sentenceMp3: require('../mp3/sentences/fuego.mp3'),
     },
     {
       word: 'flor',
       sentence: 'La flor del jardín embellece la casa.',
-      image: 'path/to/image_of_flor.jpg', // Replace with actual path to the image
+      image: require('../img/flor.jpeg'),
+      wordMp3: require('../mp3/words/flor.mp3'),
+      sentenceMp3: require('../mp3/sentences/flor.mp3'),
     },
     {
       word: 'futbol',
       sentence: 'El fútbol es uno de los deportes más populares del mundo.',
-      image: 'path/to/image_of_futbol.jpg', // Replace with actual path to the image
+      image: require('../img/futbol.jpeg'),
+      wordMp3: require('../mp3/words/futbol.mp3'),
+      sentenceMp3: require('../mp3/sentences/futbol.mp3'),
     },
     {
       word: 'fiesta',
       sentence: 'Todos se divirtieron mucho en la fiesta.',
-      image: 'path/to/image_of_fiesta.jpg', // Replace with actual path to the image
+      image: require('../img/fiesta.jpeg'),
+      wordMp3: require('../mp3/words/fiesta.mp3'),
+      sentenceMp3: require('../mp3/sentences/fiesta.mp3'),
     },
   ],
 };
