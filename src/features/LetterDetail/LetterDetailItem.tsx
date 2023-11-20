@@ -11,8 +11,9 @@ const styles = StyleSheet.create({
     backgroundColor: light.white,
     borderRadius: 18,
   },
-  image: {width: '90%', height: 300, borderRadius: 12, marginTop: 18},
+  image: {width: '90%', height: 300, borderRadius: 12},
   wordText: {fontSize: 36, marginVertical: 12},
+  wordSentence: {fontSize: 24, padding: 12},
 });
 
 const LetterDetailItem = ({
@@ -28,8 +29,9 @@ const LetterDetailItem = ({
 }) => {
   return (
     <View style={styles.container}>
-      <Image source={word.image} style={styles.image} />
       <Text style={styles.wordText}>{word.word}</Text>
+      <Image source={word.image} style={styles.image} />
+      <Text style={styles.wordSentence}>{word.sentence}</Text>
     </View>
   );
 };
