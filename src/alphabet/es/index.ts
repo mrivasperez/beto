@@ -6,10 +6,40 @@ import letter4Data from './letters/4';
 import letter5Data from './letters/5';
 
 export const alphabet_es = [
-  {value: 'a', index: 0, data: letter0Data},
-  {value: 'b', index: 1, data: letter1Data},
-  {value: 'c', index: 2, data: letter2Data},
-  {value: 'd', index: 3, data: letter3Data},
-  {value: 'e', index: 4, data: letter4Data},
-  {value: 'f', index: 5, data: letter5Data},
+  {
+    value: 'a',
+    index: 0,
+    data: letter0Data,
+    mp3: require('./mp3/letters/0.mp3'),
+  },
+  {
+    value: 'b',
+    index: 1,
+    data: letter1Data,
+    mp3: require('./mp3/letters/1.mp3'),
+  },
+  {
+    value: 'c',
+    index: 2,
+    data: letter2Data,
+    mp3: require('./mp3/letters/2.mp3'),
+  },
+  {
+    value: 'd',
+    index: 3,
+    data: letter3Data,
+    mp3: require('./mp3/letters/3.mp3'),
+  },
+  {
+    value: 'e',
+    index: 4,
+    data: letter4Data,
+    mp3: require('./mp3/letters/4.mp3'),
+  },
+  {
+    value: 'f',
+    index: 5,
+    data: letter5Data,
+    mp3: require('./mp3/letters/5.mp3'),
+  },
 ];
