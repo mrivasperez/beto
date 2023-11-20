@@ -8,12 +8,6 @@ import LetterDetail from './features/LetterDetail/LetterDetail';
 export type RootStackParamList = {
   Alphabet: undefined;
   LetterDetail: {letterIndex: number; letterValue: string};
-  SentenceDetail: {
-    word: string;
-    image: any;
-    sentence: string;
-    sentenceMp3: any;
-  };
 };
 
 // Define global navigation props

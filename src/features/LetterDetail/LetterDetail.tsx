@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {FlatList, Text, View} from 'react-native';
+import {FlatList, View} from 'react-native';
 import {alphabet_es} from '../../alphabet/es';
 import {RootStackParamList} from '../../App';
 import {RouteProp, useRoute} from '@react-navigation/native';
