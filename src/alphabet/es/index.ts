@@ -18,8 +18,18 @@ export const alphabet_es = [
     data: letter1Data,
     mp3: require('./mp3/letters/1.mp3'),
   },
-  {value: 'c', index: 2, data: letter2Data},
-  {value: 'd', index: 3, data: letter3Data},
+  {
+    value: 'c',
+    index: 2,
+    data: letter2Data,
+    mp3: require('./mp3/letters/2.mp3'),
+  },
+  {
+    value: 'd',
+    index: 3,
+    data: letter3Data,
+    mp3: require('./mp3/letters/3.mp3'),
+  },
   {value: 'e', index: 4, data: letter4Data},
   {value: 'f', index: 5, data: letter5Data},
 ];
