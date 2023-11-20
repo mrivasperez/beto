@@ -1,5 +1,6 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+
+import {StyleSheet, Text, View} from 'react-native';
 import {alphabet_es} from '../../alphabet/es';
 import {RootStackParamList} from '../../App';
 import {RouteProp, useRoute} from '@react-navigation/native';
