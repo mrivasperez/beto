@@ -6,8 +6,18 @@ import letter4Data from './letters/4';
 import letter5Data from './letters/5';
 
 export const alphabet_es = [
-  {value: 'a', index: 0, data: letter0Data},
-  {value: 'b', index: 1, data: letter1Data},
+  {
+    value: 'a',
+    index: 0,
+    data: letter0Data,
+    mp3: require('./mp3/letters/0.mp3'),
+  },
+  {
+    value: 'b',
+    index: 1,
+    data: letter1Data,
+    mp3: require('./mp3/letters/1.mp3'),
+  },
   {value: 'c', index: 2, data: letter2Data},
   {value: 'd', index: 3, data: letter3Data},
   {value: 'e', index: 4, data: letter4Data},
