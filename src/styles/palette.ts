@@ -1,4 +1,5 @@
 export const light = {
+  white: '#ffffff',
   black900: '#000000',
   black700: '#1a1a1a',
   black500: '#333333',
