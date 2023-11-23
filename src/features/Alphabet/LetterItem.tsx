@@ -4,6 +4,7 @@ import {light} from '../../styles/palette';
 import {Letter} from './types';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigation} from '../../App';
+import Sound from 'react-native-sound';
 
 const styles = StyleSheet.create({
   LetterContainer: {
@@ -24,13 +25,21 @@ const styles = StyleSheet.create({
 });
 
 const LetterItem = ({letterData}: {letterData: Letter}) => {
-  const navigation = useNavigation<StackNavigation>();
-
+  // const navigation = useNavigation<StackNavigation>();
+  Sound.setCategory('Playback');
+  const letterSound = new Sound(letterData.mp3);
   const handlePressLetter = () => {
-    navigation.navigate('LetterDetail', {
-      letterIndex: letterData.index,
-      letterValue: `${letterData.value.toUpperCase()}${letterData.value}`,
+    return letterSound.play(success => {
+      if (success) {
+        console.log('it work');
+      } else {
+        console.log('noi workl');
+      }
     });
+    // navigation.navigate('LetterDetail', {
+    //   letterIndex: letterData.index,
+    //   letterValue: `${letterData.value.toUpperCase()}${letterData.value}`,
+    // });
   };
 
   return (
