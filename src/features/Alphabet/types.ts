@@ -1,4 +1,4 @@
-export type Letter {
+export type Letter = {
   value: string;
   index: number;
   data: {
@@ -7,4 +7,5 @@ export type Letter {
       sentence: string;
     }[];
   };
-}
+  mp3: any;
+};

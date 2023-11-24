@@ -1,0 +1,149 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/alphabet/es/mp3/letters/0.mp3",
+      "sha1": "944e22c59b7725243214671330bd843c7604287c"
+    },
+    {
+      "path": "src/alphabet/es/mp3/letters/1.mp3",
+      "sha1": "6620929913461949756ef1f152b78826e46436c5"
+    },
+    {
+      "path": "src/alphabet/es/mp3/letters/2.mp3",
+      "sha1": "c0845e48c106eaeea4484b20c220e2c4f2371e14"
+    },
+    {
+      "path": "src/alphabet/es/mp3/letters/3.mp3",
+      "sha1": "19b25c4aa9f7dce00bb1536b249aed7d5cf289c4"
+    },
+    {
+      "path": "src/alphabet/es/mp3/letters/4.mp3",
+      "sha1": "6bad920a227eda0108e65c9a58ec743bd2e090f2"
+    },
+    {
+      "path": "src/alphabet/es/mp3/letters/5.mp3",
+      "sha1": "3b44aa408057313e8f9e7645e50c4f31cfee6cb6"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/agua.mp3",
+      "sha1": "29a448447045fb98d1f3e0b4fe130d584908ca6e"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/amor.mp3",
+      "sha1": "fe46b1a78b5ecc869cd401298f28e677374e5514"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/animal.mp3",
+      "sha1": "4e09a81ef745f30d49d55718883c063296f7101b"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/arbol.mp3",
+      "sha1": "e213552067f1c486ba8a3452c7aa5b5c05a0fc67"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/arte.mp3",
+      "sha1": "29e59277352f89ca19ba850da9836d91aca25f78"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/balon.mp3",
+      "sha1": "d762dc604a7c473fbd2bc739e7cf1a7e7c043550"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/barco.mp3",
+      "sha1": "6261cbea38735953415d6e6ae8bffc18a0fbfa60"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/bolsa.mp3",
+      "sha1": "78b0810488c202a227c368ebd7eff0c245f1e4b7"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/boton.mp3",
+      "sha1": "ef178d38e66a6fda0afd2f3b393dc98e526fb669"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/buho.mp3",
+      "sha1": "7930b8db1dbd34464a4bd513ff0bba8f76334f38"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/calle.mp3",
+      "sha1": "cb8921e5067ab1af5c16701d35765310625a01ff"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/cama.mp3",
+      "sha1": "264541923333ff7f2d83b4465a01837e555d15e3"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/casa.mp3",
+      "sha1": "19e07cd7bee082667c3379622bc74dc78e6fb9f7"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/coche.mp3",
+      "sha1": "92b1f5a1cdf757fbab4612d5e1f2bd9ba608b1ef"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/coco.mp3",
+      "sha1": "06705e98381d5c5ba62e63cdb03679380a9f05ca"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/dama.mp3",
+      "sha1": "2d184417201f6b22d2004110455526d94f76d734"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/dedo.mp3",
+      "sha1": "b27152e5a1d8f6bfb52e9b9e2749e6b468e5bf2f"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/dia.mp3",
+      "sha1": "a341f3b1b6793c31974e138cd4b6696b9553108d"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/diente.mp3",
+      "sha1": "26f427dbeac206850d918c84ff9e0c3ce1834183"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/dulce.mp3",
+      "sha1": "99ad69f29215a0aee0c551f772b948d988b3251f"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/elefante.mp3",
+      "sha1": "b0fa51c8d3082c9fa4acb9dfe756232ab46ba827"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/escalera.mp3",
+      "sha1": "7bc6cd4b3897fa4c6392e57d93544931f6800813"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/escuela.mp3",
+      "sha1": "9cc844c2921f22ee9da1e492b942ac871535402a"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/espejo.mp3",
+      "sha1": "09e1038513597a2ba6b15c63d0686a128d8270d4"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/estrella.mp3",
+      "sha1": "f4e8de30a4f6f393b3b5b4b81b356caaa7cae947"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/familia.mp3",
+      "sha1": "ccbd269702453fcdf8488911d585edf79421d3f1"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/fiesta.mp3",
+      "sha1": "fdd6c28e7cb812265cfc266d27c14ea3c337fc86"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/flor.mp3",
+      "sha1": "f3692fd26e6d43c0c9486d93d19d3b21810d370c"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/fuego.mp3",
+      "sha1": "28c8ee84c5c20b1f6f8ee0d46939074eb9b65612"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/futbol.mp3",
+      "sha1": "48536fccb90a0dae906c599e3fc0382b70474d10"
+    }
+  ]
+}
