@@ -22,29 +22,48 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '600',
   },
+  HighlightLetterItemText: {
+    backgroundColor: light.blueberry100,
+  },
 });
 
-const LetterItem = ({letterData}: {letterData: Letter}) => {
-  // const navigation = useNavigation<StackNavigation>();
-  Sound.setCategory('Playback');
+const LetterItem = ({
+  letterData,
+  highlightedLetterIndex,
+  setHighlightedLetterIndex,
+}: {
+  letterData: Letter;
+  highlightedLetterIndex?: number;
+  setHighlightedLetterIndex: React.Dispatch<React.SetStateAction<number>>;
+}) => {
+  const navigation = useNavigation<StackNavigation>();
   const letterSound = new Sound(letterData.mp3);
+
   const handlePressLetter = () => {
-    return letterSound.play(success => {
+    if (highlightedLetterIndex === letterData.index) {
+      return navigation.navigate('LetterDetail', {
+        letterIndex: letterData.index,
+        letterValue: `${letterData.value.toUpperCase()}${letterData.value}`,
+      });
+    }
+
+    letterSound.play(success => {
       if (success) {
-        console.log('it work');
+        setHighlightedLetterIndex(letterData.index);
+        return letterSound.release();
       } else {
-        console.log('noi workl');
+        setHighlightedLetterIndex(undefined);
       }
     });
-    // navigation.navigate('LetterDetail', {
-    //   letterIndex: letterData.index,
-    //   letterValue: `${letterData.value.toUpperCase()}${letterData.value}`,
-    // });
   };
 
   return (
     <TouchableOpacity
-      style={styles.LetterContainer}
+      style={[
+        styles.LetterContainer,
+        highlightedLetterIndex === letterData.index &&
+          styles.HighlightLetterItemText,
+      ]}
       onPress={handlePressLetter}>
       <Text style={styles.LetterItemText}>
         {letterData.value.toUpperCase()}
