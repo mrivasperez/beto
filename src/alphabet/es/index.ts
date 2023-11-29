@@ -4,6 +4,7 @@ import letter2Data from './letters/2';
 import letter3Data from './letters/3';
 import letter4Data from './letters/4';
 import letter5Data from './letters/5';
+import letter6Data from './letters/6';
 
 export const alphabet_es = [
   {
@@ -41,5 +42,11 @@ export const alphabet_es = [
     index: 5,
     data: letter5Data,
     mp3: require('./mp3/letters/5.mp3'),
+  },
+  {
+    value: 'g',
+    index: 6,
+    data: letter6Data,
+    mp3: require('./mp3/letters/6.mp3'),
   },
 ];
