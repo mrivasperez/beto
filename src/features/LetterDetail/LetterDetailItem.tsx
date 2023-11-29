@@ -1,6 +1,7 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {light} from '../../styles/palette';
+import Sound from 'react-native-sound';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,6 +28,9 @@ const LetterDetailItem = ({
     sentenceMp3: any;
   };
 }) => {
+  const wordSound = new Sound(word.wordMp3);
+  const sentenceSound = new Sound(word.sentenceMp3);
+
   return (
     <View style={styles.container}>
       <Text style={styles.wordText}>{word.word}</Text>
