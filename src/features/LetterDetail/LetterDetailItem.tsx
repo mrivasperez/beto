@@ -4,6 +4,10 @@ import {light} from '../../styles/palette';
 import Sound from 'react-native-sound';
 
 const styles = StyleSheet.create({
+  outlined: {
+    borderWidth: 2,
+    borderColor: light.blueberry100,
+  },
   container: {
     margin: 24,
     alignContent: 'center',
@@ -47,7 +51,12 @@ const LetterDetailItem = ({
   };
 
   return (
-    <TouchableOpacity style={styles.container} onPress={handlePressLetterItem}>
+    <TouchableOpacity
+      style={[
+        styles.container,
+        outlinedWordIndex === word.index && styles.outlined,
+      ]}
+      onPress={handlePressLetterItem}>
       <Text style={styles.wordText}>{word.word}</Text>
       <Image source={word.image} style={styles.image} />
       <Text style={styles.wordSentence}>{word.sentence}</Text>
