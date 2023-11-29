@@ -14,12 +14,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-beto-betoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-beto-betoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		717C79552F0341E7AF3C3540 /* 0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7CFC61B5487410092ADB670 /* 0.mp3 */; };
-		64F70CBAB9044E3BB1C7634F /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 825C57DDF42A4EA7AD6638EA /* 1.mp3 */; };
-		1F02E1C010234D5291D5B011 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D11966E72814CC1AD5AA584 /* 2.mp3 */; };
-		8B7236DE22FA4F4685EE9DF9 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 01216545530C48A09F913278 /* 3.mp3 */; };
-		51505339625A4BBB942E8287 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1CF0CD295A6428F944CF019 /* 4.mp3 */; };
-		9598E3BA5EEB4F9BA3FB8B36 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31FE59A0E89147D5B7945958 /* 5.mp3 */; };
 		93810BC0EA2D45459E95ACB1 /* agua.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5968907FAFE6434A830B24A6 /* agua.mp3 */; };
 		6BE1DDE1FDDB4AF590282924 /* amor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7C69BE56814E6FBE58027F /* amor.mp3 */; };
 		CD469C5AE23B48D3A85A2E1F /* animal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 778579E7B4E54F50AC9F9342 /* animal.mp3 */; };
@@ -50,6 +44,18 @@
 		148DE5D6CC084AA391B073E9 /* flor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36A7592DF9FD4E5EAEE4039E /* flor.mp3 */; };
 		335976DE396B4B21B10DD98E /* fuego.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 371B778C381B46629D9A8CCD /* fuego.mp3 */; };
 		36EE416E55364DDC988BE7F0 /* futbol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88E1BA5906C64F1DA60D2E90 /* futbol.mp3 */; };
+		073B7E3A289B4AC6B8AFEB33 /* letter0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C67AD591908644D0B0D150CE /* letter0.mp3 */; };
+		F6042707CC0D4B218053397C /* letter1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E8B67EAC003D423B9AB2F455 /* letter1.mp3 */; };
+		59ECBF898A734E51AAD7F7FB /* letter2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B43162D5E88344AB9F92BBF8 /* letter2.mp3 */; };
+		EB911034A5CF497FB7BE2070 /* letter3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AF5500621574CA39E21E6F7 /* letter3.mp3 */; };
+		2BBDC0C1B9E944E893C9315B /* letter4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 477D6383E98D43A48B39AF09 /* letter4.mp3 */; };
+		767CF46BC54045D09EF84ECA /* letter5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4EE99C4BB8D64BC1A5A6CCED /* letter5.mp3 */; };
+		E9A53F5ADDDA4B578B0BCFAD /* letter6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 011D977A1F354EDD982051D1 /* letter6.mp3 */; };
+		561AB2D627A14185BF8872A4 /* galleta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CB7B85F8C7B436CBFFA0F71 /* galleta.mp3 */; };
+		3099AA198C4C477989382C7C /* gato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A00CB193A19C46CC9F474684 /* gato.mp3 */; };
+		E4E351C397024AD5A130FE2D /* gol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1AF731067AF40C988421A40 /* gol.mp3 */; };
+		226478E7690C45908E739A29 /* gorra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A970E043CBA54CD68A7187DA /* gorra.mp3 */; };
+		E8AB71C6E4B2458A9E424548 /* guitarra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076667C99B7A42C0A945FAFD /* guitarra.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +86,6 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = beto/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-beto-betoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beto-betoTests.release.xcconfig"; path = "Target Support Files/Pods-beto-betoTests/Pods-beto-betoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		D7CFC61B5487410092ADB670 /* 0.mp3 */ = {isa = PBXFileReference; name = "0.mp3"; path = "../src/alphabet/es/mp3/letters/0.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		825C57DDF42A4EA7AD6638EA /* 1.mp3 */ = {isa = PBXFileReference; name = "1.mp3"; path = "../src/alphabet/es/mp3/letters/1.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4D11966E72814CC1AD5AA584 /* 2.mp3 */ = {isa = PBXFileReference; name = "2.mp3"; path = "../src/alphabet/es/mp3/letters/2.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		01216545530C48A09F913278 /* 3.mp3 */ = {isa = PBXFileReference; name = "3.mp3"; path = "../src/alphabet/es/mp3/letters/3.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B1CF0CD295A6428F944CF019 /* 4.mp3 */ = {isa = PBXFileReference; name = "4.mp3"; path = "../src/alphabet/es/mp3/letters/4.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		31FE59A0E89147D5B7945958 /* 5.mp3 */ = {isa = PBXFileReference; name = "5.mp3"; path = "../src/alphabet/es/mp3/letters/5.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		5968907FAFE6434A830B24A6 /* agua.mp3 */ = {isa = PBXFileReference; name = "agua.mp3"; path = "../src/alphabet/es/mp3/sentences/agua.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		BB7C69BE56814E6FBE58027F /* amor.mp3 */ = {isa = PBXFileReference; name = "amor.mp3"; path = "../src/alphabet/es/mp3/sentences/amor.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		778579E7B4E54F50AC9F9342 /* animal.mp3 */ = {isa = PBXFileReference; name = "animal.mp3"; path = "../src/alphabet/es/mp3/sentences/animal.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
@@ -116,6 +116,18 @@
 		36A7592DF9FD4E5EAEE4039E /* flor.mp3 */ = {isa = PBXFileReference; name = "flor.mp3"; path = "../src/alphabet/es/mp3/sentences/flor.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		371B778C381B46629D9A8CCD /* fuego.mp3 */ = {isa = PBXFileReference; name = "fuego.mp3"; path = "../src/alphabet/es/mp3/sentences/fuego.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		88E1BA5906C64F1DA60D2E90 /* futbol.mp3 */ = {isa = PBXFileReference; name = "futbol.mp3"; path = "../src/alphabet/es/mp3/sentences/futbol.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C67AD591908644D0B0D150CE /* letter0.mp3 */ = {isa = PBXFileReference; name = "letter0.mp3"; path = "../src/alphabet/es/mp3/letters/letter0.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E8B67EAC003D423B9AB2F455 /* letter1.mp3 */ = {isa = PBXFileReference; name = "letter1.mp3"; path = "../src/alphabet/es/mp3/letters/letter1.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B43162D5E88344AB9F92BBF8 /* letter2.mp3 */ = {isa = PBXFileReference; name = "letter2.mp3"; path = "../src/alphabet/es/mp3/letters/letter2.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1AF5500621574CA39E21E6F7 /* letter3.mp3 */ = {isa = PBXFileReference; name = "letter3.mp3"; path = "../src/alphabet/es/mp3/letters/letter3.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		477D6383E98D43A48B39AF09 /* letter4.mp3 */ = {isa = PBXFileReference; name = "letter4.mp3"; path = "../src/alphabet/es/mp3/letters/letter4.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4EE99C4BB8D64BC1A5A6CCED /* letter5.mp3 */ = {isa = PBXFileReference; name = "letter5.mp3"; path = "../src/alphabet/es/mp3/letters/letter5.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		011D977A1F354EDD982051D1 /* letter6.mp3 */ = {isa = PBXFileReference; name = "letter6.mp3"; path = "../src/alphabet/es/mp3/letters/letter6.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0CB7B85F8C7B436CBFFA0F71 /* galleta.mp3 */ = {isa = PBXFileReference; name = "galleta.mp3"; path = "../src/alphabet/es/mp3/sentences/galleta.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A00CB193A19C46CC9F474684 /* gato.mp3 */ = {isa = PBXFileReference; name = "gato.mp3"; path = "../src/alphabet/es/mp3/sentences/gato.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D1AF731067AF40C988421A40 /* gol.mp3 */ = {isa = PBXFileReference; name = "gol.mp3"; path = "../src/alphabet/es/mp3/sentences/gol.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A970E043CBA54CD68A7187DA /* gorra.mp3 */ = {isa = PBXFileReference; name = "gorra.mp3"; path = "../src/alphabet/es/mp3/sentences/gorra.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		076667C99B7A42C0A945FAFD /* guitarra.mp3 */ = {isa = PBXFileReference; name = "guitarra.mp3"; path = "../src/alphabet/es/mp3/sentences/guitarra.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,12 +236,6 @@
 		C7335EE066324E7FB13732DC /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				D7CFC61B5487410092ADB670 /* 0.mp3 */,
-				825C57DDF42A4EA7AD6638EA /* 1.mp3 */,
-				4D11966E72814CC1AD5AA584 /* 2.mp3 */,
-				01216545530C48A09F913278 /* 3.mp3 */,
-				B1CF0CD295A6428F944CF019 /* 4.mp3 */,
-				31FE59A0E89147D5B7945958 /* 5.mp3 */,
 				5968907FAFE6434A830B24A6 /* agua.mp3 */,
 				BB7C69BE56814E6FBE58027F /* amor.mp3 */,
 				778579E7B4E54F50AC9F9342 /* animal.mp3 */,
@@ -260,6 +266,18 @@
 				36A7592DF9FD4E5EAEE4039E /* flor.mp3 */,
 				371B778C381B46629D9A8CCD /* fuego.mp3 */,
 				88E1BA5906C64F1DA60D2E90 /* futbol.mp3 */,
+				C67AD591908644D0B0D150CE /* letter0.mp3 */,
+				E8B67EAC003D423B9AB2F455 /* letter1.mp3 */,
+				B43162D5E88344AB9F92BBF8 /* letter2.mp3 */,
+				1AF5500621574CA39E21E6F7 /* letter3.mp3 */,
+				477D6383E98D43A48B39AF09 /* letter4.mp3 */,
+				4EE99C4BB8D64BC1A5A6CCED /* letter5.mp3 */,
+				011D977A1F354EDD982051D1 /* letter6.mp3 */,
+				0CB7B85F8C7B436CBFFA0F71 /* galleta.mp3 */,
+				A00CB193A19C46CC9F474684 /* gato.mp3 */,
+				D1AF731067AF40C988421A40 /* gol.mp3 */,
+				A970E043CBA54CD68A7187DA /* gorra.mp3 */,
+				076667C99B7A42C0A945FAFD /* guitarra.mp3 */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -361,12 +379,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				717C79552F0341E7AF3C3540 /* 0.mp3 in Resources */,
-				64F70CBAB9044E3BB1C7634F /* 1.mp3 in Resources */,
-				1F02E1C010234D5291D5B011 /* 2.mp3 in Resources */,
-				8B7236DE22FA4F4685EE9DF9 /* 3.mp3 in Resources */,
-				51505339625A4BBB942E8287 /* 4.mp3 in Resources */,
-				9598E3BA5EEB4F9BA3FB8B36 /* 5.mp3 in Resources */,
 				93810BC0EA2D45459E95ACB1 /* agua.mp3 in Resources */,
 				6BE1DDE1FDDB4AF590282924 /* amor.mp3 in Resources */,
 				CD469C5AE23B48D3A85A2E1F /* animal.mp3 in Resources */,
@@ -397,6 +409,18 @@
 				148DE5D6CC084AA391B073E9 /* flor.mp3 in Resources */,
 				335976DE396B4B21B10DD98E /* fuego.mp3 in Resources */,
 				36EE416E55364DDC988BE7F0 /* futbol.mp3 in Resources */,
+				073B7E3A289B4AC6B8AFEB33 /* letter0.mp3 in Resources */,
+				F6042707CC0D4B218053397C /* letter1.mp3 in Resources */,
+				59ECBF898A734E51AAD7F7FB /* letter2.mp3 in Resources */,
+				EB911034A5CF497FB7BE2070 /* letter3.mp3 in Resources */,
+				2BBDC0C1B9E944E893C9315B /* letter4.mp3 in Resources */,
+				767CF46BC54045D09EF84ECA /* letter5.mp3 in Resources */,
+				E9A53F5ADDDA4B578B0BCFAD /* letter6.mp3 in Resources */,
+				561AB2D627A14185BF8872A4 /* galleta.mp3 in Resources */,
+				3099AA198C4C477989382C7C /* gato.mp3 in Resources */,
+				E4E351C397024AD5A130FE2D /* gol.mp3 in Resources */,
+				226478E7690C45908E739A29 /* gorra.mp3 in Resources */,
+				E8AB71C6E4B2458A9E424548 /* guitarra.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

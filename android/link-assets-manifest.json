@@ -2,28 +2,32 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/alphabet/es/mp3/letters/0.mp3",
+      "path": "src/alphabet/es/mp3/letters/letter0.mp3",
       "sha1": "944e22c59b7725243214671330bd843c7604287c"
     },
     {
-      "path": "src/alphabet/es/mp3/letters/1.mp3",
+      "path": "src/alphabet/es/mp3/letters/letter1.mp3",
       "sha1": "6620929913461949756ef1f152b78826e46436c5"
     },
     {
-      "path": "src/alphabet/es/mp3/letters/2.mp3",
+      "path": "src/alphabet/es/mp3/letters/letter2.mp3",
       "sha1": "c0845e48c106eaeea4484b20c220e2c4f2371e14"
     },
     {
-      "path": "src/alphabet/es/mp3/letters/3.mp3",
+      "path": "src/alphabet/es/mp3/letters/letter3.mp3",
       "sha1": "19b25c4aa9f7dce00bb1536b249aed7d5cf289c4"
     },
     {
-      "path": "src/alphabet/es/mp3/letters/4.mp3",
+      "path": "src/alphabet/es/mp3/letters/letter4.mp3",
       "sha1": "6bad920a227eda0108e65c9a58ec743bd2e090f2"
     },
     {
-      "path": "src/alphabet/es/mp3/letters/5.mp3",
+      "path": "src/alphabet/es/mp3/letters/letter5.mp3",
       "sha1": "3b44aa408057313e8f9e7645e50c4f31cfee6cb6"
+    },
+    {
+      "path": "src/alphabet/es/mp3/letters/letter6.mp3",
+      "sha1": "2db5a70453661a6a5961bd124827c75c4d330efd"
     },
     {
       "path": "src/alphabet/es/mp3/sentences/agua.mp3",
@@ -144,6 +148,26 @@
     {
       "path": "src/alphabet/es/mp3/sentences/futbol.mp3",
       "sha1": "48536fccb90a0dae906c599e3fc0382b70474d10"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/galleta.mp3",
+      "sha1": "aee6fb9380973095c661506db90f65120a37c536"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/gato.mp3",
+      "sha1": "798a35b23a83f03823da09ad0cd331a4d9cb687a"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/gol.mp3",
+      "sha1": "d9456b10bca6ace880369bf033780f5ae82c073d"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/gorra.mp3",
+      "sha1": "692357ab378a15f76c7a84f404e2d0ac5f354daa"
+    },
+    {
+      "path": "src/alphabet/es/mp3/sentences/guitarra.mp3",
+      "sha1": "a846a6d05bcd4fb49b1277681c9cad17cd03429c"
     }
   ]
 }
