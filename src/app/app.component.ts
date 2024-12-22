@@ -11,4 +11,16 @@ import { alphabet } from './alphabet';
 export class AppComponent {
   title = 'beto';
   alphabet = alphabet;
+  selectedLetter: string | null = null;
+
+  onLetterClick(letter: string) {
+    this.selectedLetter = letter;
+    let textToSpeak = letter;
+    if (letter === 'y') {
+      textToSpeak = "i griega"
+    }
+    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+    utterance.lang = 'es-US'
+    window.speechSynthesis.speak(utterance);
+  }
 }
