@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { alphabet } from './alphabet';
+import { OnboardingComponent } from "./onboarding/onboarding.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, OnboardingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
