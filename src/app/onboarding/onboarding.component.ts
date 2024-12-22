@@ -6,14 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './onboarding.component.html',
   styleUrl: './onboarding.component.css',
 })
-export class OnboardingComponent implements OnInit {
+export class OnboardingComponent  {
   headerText = '¡Bienvenide a Beto!';
-  showOnboarding = false;
-  ngOnInit(): void {
-    const onboardingComplete = localStorage.getItem('onboardingComplete');
 
-    if (onboardingComplete) {
-      this.showOnboarding = false;
-    } else this.showOnboarding = true;
-  }
 }
