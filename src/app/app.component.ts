@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,17 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'beto';
 
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    const onboardingComplete = localStorage.getItem('onboardingComplete');
+    if (onboardingComplete) {
+      this.router.navigate(['/'])
+    } else {
+      this.router.navigate(['/onboarding'])
+    }
+  }
 }
