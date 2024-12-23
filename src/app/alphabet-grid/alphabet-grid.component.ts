@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { alphabet } from '../alphabet';
+import { WordComponent } from "../shared/word/word.component";
 
 @Component({
   selector: 'app-alphabet-grid',
-  imports: [],
+  imports: [WordComponent],
   templateUrl: './alphabet-grid.component.html',
   styleUrl: './alphabet-grid.component.css'
 })
