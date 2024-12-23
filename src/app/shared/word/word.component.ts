@@ -13,6 +13,7 @@ export class WordComponent {
     this.isHighlighted = true;
     const utterance = new SpeechSynthesisUtterance(this.word);
     utterance.lang = 'es-US';
+    window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utterance);
     utterance.onend = () => {
       this.isHighlighted = false;
