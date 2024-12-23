@@ -11,9 +11,12 @@ import { WordComponent } from "../shared/word/word.component";
 export class AlphabetGridComponent {
   alphabet = alphabet;
   selectedLetter: string | null = null;
+  currentInput = '';
+  placeholder = 'alfabeto'
 
   onLetterClick(letter: string) {
     this.selectedLetter = letter;
+    this.currentInput += letter;
     let textToSpeak = letter;
     if (letter === 'y') {
       textToSpeak = "i griega"
