@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { alphabet } from './alphabet';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,19 +7,17 @@ import { alphabet } from './alphabet';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'beto';
-  alphabet = alphabet;
-  selectedLetter: string | null = null;
 
-  onLetterClick(letter: string) {
-    this.selectedLetter = letter;
-    let textToSpeak = letter;
-    if (letter === 'y') {
-      textToSpeak = "i griega"
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    const onboardingComplete = localStorage.getItem('onboardingComplete');
+    if (onboardingComplete) {
+      this.router.navigate(['/'])
+    } else {
+      this.router.navigate(['/onboarding'])
     }
-    const utterance = new SpeechSynthesisUtterance(textToSpeak);
-    utterance.lang = 'es-US'
-    window.speechSynthesis.speak(utterance);
   }
 }

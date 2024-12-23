@@ -1,0 +1,21 @@
+<h1 class="text-7xl text-center my-8">
+  alfabeto
+</h1>
+
+<div class="flex justify-center items-start">
+  <div class="p-4">
+    <div class="grid grid-cols-6 gap-4">
+      @for (letter of alphabet; track $index) {
+      <button
+        class="p-4 bg-gray-200 rounded text-4xl font-bold"
+        (click)="onLetterClick(letter)"
+        [class.bg-blue-600]="selectedLetter === letter"
+        [class.text-white]="selectedLetter === letter"
+      >
+        {{ letter }}
+      </button>
+
+      }
+    </div>
+  </div>
+</div>
