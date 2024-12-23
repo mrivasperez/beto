@@ -20,6 +20,7 @@ export class AlphabetGridComponent {
     }
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
     utterance.lang = 'es-US'
+    window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utterance);
   }
 }
