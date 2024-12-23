@@ -1,0 +1,16 @@
+export const words = [
+  { word: 'hola', emoji: '👋' },
+  { word: 'hacer', emoji: '🛠️' },
+  { word: 'hablar', emoji: '🗣️' },
+  { word: 'hombre', emoji: '👨' },
+  { word: 'huevo', emoji: '🥚' },
+  { word: 'hermana', emoji: '👧' },
+  { word: 'hermano', emoji: '👦' },
+  { word: 'hasta', emoji: '➡️' },
+  { word: 'hijo', emoji: '👶' },
+  { word: 'hogar', emoji: '🏠' },
+  { word: 'hielo', emoji: '🧊' },
+  { word: 'historia', emoji: '📖' },
+  { word: 'hora', emoji: '🕒' },
+  { word: 'hambre', emoji: '😋' },
+];
