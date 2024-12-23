@@ -4,6 +4,7 @@
 <button
   class="p-4 bg-gray-200 rounded text-4xl font-bold"
   (click)="onLetterClick(letter)"
+  [class.bg-blue-400]="selectedLetter === letter"
 >
   {{ letter }}
 </button>
