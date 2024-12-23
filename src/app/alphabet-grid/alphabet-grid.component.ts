@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { alphabet } from '../alphabet';
+import { alphabet } from '../../data/spanish/alphabet';
 import { WordComponent } from '../shared/word/word.component';
 
 @Component({
