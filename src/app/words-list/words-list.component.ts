@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { WordsService } from './words.service';
+import { WordComponent } from "../shared/word/word.component";
 
 @Component({
   selector: 'app-words-list',
-  imports: [],
+  imports: [WordComponent],
   templateUrl: './words-list.component.html',
   styleUrl: './words-list.component.css',
 })
