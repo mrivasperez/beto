@@ -6,12 +6,16 @@
           [word]="currentInput ? currentInput : placeholder"
           class="text-5xl"
         ></app-word>
-        @if (currentInput) {<button class="text-2xl" (click)="onEraseWord()">❌</button>}
+        @if (currentInput) {<button class="text-2xl" (click)="onEraseWord()">
+          ❌</button
+        >}
       </div>
     </div>
     <div class="grid grid-cols-4 gap-5 md:grid-cols-5 lg:grid-cols-6 mt-4">
       @for (letter of alphabet; track $index) {
       <button
+        (mousedown)="startPressTimer(letter)"
+        (mouseup)="endPressTimer()"
         class="p-4 rounded text-4xl"
         (click)="onLetterClick(letter)"
         [class.bg-gray-100]="selectedLetter !== letter"
