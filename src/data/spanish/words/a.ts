@@ -5,7 +5,7 @@ export const words = [
   { word: 'amor', emoji: '❤️' },
   { word: 'ahora', emoji: '⏰' },
   { word: 'aqui', emoji: '📍' },
-  { word: 'alla', emoji: '🗺️' },
+  { word: 'allá', emoji: '🗺️' },
   { word: 'andar', emoji: '🚶' },
   { word: 'anoche', emoji: '🌃' },
   { word: 'azul', emoji: '🟦' },
