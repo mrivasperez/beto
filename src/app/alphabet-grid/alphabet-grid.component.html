@@ -15,13 +15,16 @@
       @for (letter of alphabet; track $index) {
       <button
         (mousedown)="startPressTimer(letter)"
+        (touchstart)="startPressTimer(letter)"
         (mouseup)="endPressTimer()"
+        (touchend)="endPressTimer()"
         class="p-4 rounded text-4xl"
         (click)="onLetterClick(letter)"
         [class.bg-gray-100]="selectedLetter !== letter"
         [class.bg-blue-600]="selectedLetter === letter"
         [class.text-white]="selectedLetter === letter"
         [class.font-bold]="selectedLetter === letter"
+        (contextmenu)="$event.preventDefault()"
       >
         {{ letter }}
       </button>
