@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
+import { WordList, wordListMap } from '../../data/spanish/wordListMap';
 
 @Injectable({
   providedIn: 'root',
 })
 export class WordsService {
-  async getWordsForLetter(
-    letter: string
-  ): Promise<{ word: string; emoji: string }[]> {
+  currentLanguage: string = 'spanish';
+
+  async getWordsForLetter(letter: string): Promise<WordList> {
     try {
-      const module = await import(`../data/spanish/words/${letter}.ts`);
+      const module = await wordListMap[this.currentLanguage][letter]();
       return module.words;
     } catch (error) {
       console.error(`Error loading words for ${letter}:`, error);
