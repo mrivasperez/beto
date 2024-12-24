@@ -1,0 +1,15 @@
+export const words = [
+  { word: 'no', emoji: '🙅' },
+  { word: 'nombre', emoji: '🏷️' },
+  { word: 'noche', emoji: '🌃' },
+  { word: 'nadar', emoji: '🏊' },
+  { word: 'nada', emoji: '🕳️' },
+  { word: 'necesitar', emoji: '🙏' },
+  { word: 'naranja', emoji: '🍊' },
+  { word: 'nuevo', emoji: '🆕' },
+  { word: 'niño', emoji: '👦' },
+  { word: 'niña', emoji: '👧' },
+  { word: 'nube', emoji: '☁️' },
+  { word: 'nariz', emoji: '👃' },
+  { word: 'nota', emoji: '📝' },
+];

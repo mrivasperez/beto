@@ -1,0 +1,16 @@
+export const words = [
+  { word: 'tú', emoji: '👉' },
+  { word: 'tener', emoji: '🤝' },
+  { word: 'todo', emoji: '💯' },
+  { word: 'tres', emoji: '3️⃣' },
+  { word: 'tomar', emoji: '☕' },
+  { word: 'tiempo', emoji: '⏱️' },
+  { word: 'trabajo', emoji: '🏢' },
+  { word: 'tarde', emoji: '🌇' },
+  { word: 'tambien', emoji: '➕' },
+  { word: 'tocar', emoji: '✋' },
+  { word: 'tierra', emoji: '🌍' },
+  { word: 'tigre', emoji: '🐅' },
+  { word: 'triste', emoji: '😢' },
+  { word: 'traer', emoji: '📦' },
+];

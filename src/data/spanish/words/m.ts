@@ -1,0 +1,15 @@
+export const words = [
+  { word: 'mano', emoji: '👋' },
+  { word: 'maquina', emoji: '⚙️' },
+  { word: 'mamá', emoji: '👩' },
+  { word: 'más', emoji: '➕' },
+  { word: 'música', emoji: '🎵' },
+  { word: 'mirar', emoji: '👀' },
+  { word: 'mañana', emoji: '🌅' },
+  { word: 'malo', emoji: '👎' },
+  { word: 'mucho', emoji: '💯' },
+  { word: 'mujer', emoji: '👩‍🦰' },
+  { word: 'mundo', emoji: '🌎' },
+  { word: 'miedo', emoji: '😨' },
+  { word: 'mercado', emoji: '🛒' },
+];

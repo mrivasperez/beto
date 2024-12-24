@@ -1,0 +1,15 @@
+export const words = [
+  { word: 'para', emoji: '➡️' },
+  { word: 'pero', emoji: '🤔' },
+  { word: 'padre', emoji: '👨' },
+  { word: 'perro', emoji: '🐕' },
+  { word: 'pan', emoji: '🍞' },
+  { word: 'poner', emoji: '👇' },
+  { word: 'poco', emoji: '🤏' },
+  { word: 'plato', emoji: '🍽️' },
+  { word: 'playa', emoji: '🏖️' },
+  { word: 'poder', emoji: '💪' },
+  { word: 'puerta', emoji: '🚪' },
+  { word: 'pronto', emoji: '⏰' },
+  { word: 'princesa', emoji: '👸' },
+];

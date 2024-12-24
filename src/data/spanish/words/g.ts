@@ -1,0 +1,16 @@
+export const words = [
+  { word: 'gato', emoji: '🐈' },
+  { word: 'gente', emoji: '🧑‍🤝‍🧑' },
+  { word: 'grande', emoji: '🐘' },
+  { word: 'gracias', emoji: '🙏' },
+  { word: 'gustar', emoji: '👍' },
+  { word: 'guapo', emoji: '😎' },
+  { word: 'ganar', emoji: '🏆' },
+  { word: 'guerra', emoji: '⚔️' },
+  { word: 'gorro', emoji: '🧢' },
+  { word: 'gris', emoji: '🩶' },
+  { word: 'grupo', emoji: '👥' },
+  { word: 'galleta', emoji: '🍪' },
+  { word: 'gastar', emoji: '💸' },
+  { word: 'gritar', emoji: '🗣️' },
+];
