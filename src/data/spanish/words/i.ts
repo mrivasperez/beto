@@ -10,6 +10,5 @@ export const words = [
   { word: 'invierno', emoji: '❄️' },
   { word: 'inteligente', emoji: '🧠' },
   { word: 'interesante', emoji: '🧐' },
-  { word: 'ir', emoji: '🚶' },
   { word: 'izquierda', emoji: '⬅️' },
 ];
