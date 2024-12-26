@@ -13,7 +13,7 @@ export class SpellingGameComponent implements OnInit {
   targetEmoji: string = '';
   currentInput: string = '';
   availableLetters: string[] = [];
-
+  feedback: string = '';
   constructor(private wordService: WordsService) {}
 
   setLetters() {
@@ -41,8 +41,17 @@ export class SpellingGameComponent implements OnInit {
     this.currentInput += letter;
     this.checkIfCorrect();
   }
-  // TODO
-  checkIfCorrect() {}
+
+  checkIfCorrect() {
+    console.log(this.currentInput, this.targetWord)
+    if (this.currentInput === this.targetWord) {
+      this.feedback = 'correct';
+    } else if (this.currentInput.length > 0) {
+      this.feedback = 'incorrect';
+    } else {
+      this.feedback = '';
+    }
+  }
 
   utterTargetWord() {
     const utterance = new SpeechSynthesisUtterance(this.targetWord);

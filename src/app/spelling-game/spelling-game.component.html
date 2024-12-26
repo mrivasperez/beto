@@ -7,3 +7,8 @@
     }
   </div>
 </div>
+@if (feedback === 'correct') {
+  <span class="text-green-500 text-4xl">✓</span>
+  } @else if (feedback === 'incorrect') {
+  <span class="text-red-500 text-4xl">X</span>
+  }
