@@ -1,5 +1,15 @@
-<div class="flex justify-center items-start my-5">
+<div class="flex justify-center items-start">
   <div class="p-4 w-full max-w-screen-lg">
+    <button
+      (click)="navigateToGame()"
+      [class.bg-blue-700]="isHighlighted"
+      [class.text-white]="isHighlighted"
+      [class.text-blue-700]="!isHighlighted"
+      [class.hover:bg-blue-200]="!isHighlighted"
+      class="font-bold py-2 px-4 rounded mb-5 flex items-center gap-2"
+    >
+      🎯 Juego de Deletreo
+    </button>
     <div class="grid mb-10">
       <div class="flex justify-between w-100 items-center">
         <app-word

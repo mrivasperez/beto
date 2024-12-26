@@ -15,7 +15,7 @@ export class AlphabetGridComponent {
   currentInput = '';
   placeholder = 'alfabeto';
   pressTimer: any;
-
+  isHighlighted = false;
   constructor(private router: Router) {}
 
   onLetterClick(letter: string) {
@@ -43,5 +43,19 @@ export class AlphabetGridComponent {
 
   onEraseWord() {
     this.currentInput = '';
+  }
+
+  navigateToGame() {
+    if (!this.isHighlighted) {
+      this.isHighlighted = true;
+      const utterance = new SpeechSynthesisUtterance('Juego de deletreo');
+      utterance.lang = 'es-US';
+      window.speechSynthesis.speak(utterance);
+      setTimeout(() => {
+        this.isHighlighted = false;
+      }, 5000);
+    } else {
+      this.router.navigate(['/game']);
+    }
   }
 }
