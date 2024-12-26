@@ -35,6 +35,7 @@ export class SpellingGameComponent implements OnInit {
     this.targetEmoji = wordObject.emoji;
     this.setLetters();
     this.currentInput = '';
+    this.feedback = '';
   }
 
   addLetter(letter: string) {
@@ -43,10 +44,12 @@ export class SpellingGameComponent implements OnInit {
   }
 
   checkIfCorrect() {
-    console.log(this.currentInput, this.targetWord)
     if (this.currentInput === this.targetWord) {
       this.feedback = 'correct';
-    } else if (this.currentInput.length > 0) {
+    } else if (
+      this.currentInput.length > 0 &&
+      !this.targetWord.startsWith(this.currentInput)
+    ) {
       this.feedback = 'incorrect';
     } else {
       this.feedback = '';
@@ -58,6 +61,11 @@ export class SpellingGameComponent implements OnInit {
     utterance.lang = 'es-US';
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utterance);
+  }
+
+  resetInput() {
+    this.currentInput = '';
+    this.feedback = '';
   }
 
   async ngOnInit(): Promise<void> {

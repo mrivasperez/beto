@@ -1,14 +1,33 @@
-<div>
-  <p (click)="utterTargetWord()">{{ targetEmoji }}</p>
-  <input type="text" [value]="currentInput" />
-  <div class="flex gap-2">
-    @for(letter of availableLetters; track $index) {
-    <button (click)="addLetter(letter)">{{ letter }}</button>
-    }
+<div class="flex justify-center items-start my-5">
+  <div class="p-4 w-full max-w-screen-lg">
+    <div class="mb-6 text-center">
+      <p (click)="utterTargetWord()" class="text-9xl cursor-pointer mb-11">
+        {{ targetEmoji }}
+      </p>
+      <input
+        type="text"
+        [value]="currentInput"
+        class="w-full p-2 rounded border border-gray-300 text-4xl text-center"
+      />
+    </div>
+    <div class="flex justify-start gap-2 flex-wrap">
+      @for (letter of availableLetters; track $index) {
+      <button
+        (click)="addLetter(letter)"
+        class="p-4 rounded text-4xl font-bold bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
+      >
+        {{ letter }}
+      </button>
+      }
+    </div>
+    <div class="mt-11 flex justify-center">
+      @if (feedback === 'correct') {
+      <span (click)="loadNewWord()" class="text-green-500 text-6xl">✓</span>
+      } @else if (feedback === 'incorrect') {
+      <span (click)="resetInput()" class="text-red-500 text-6xl cursor-pointer">
+        X
+      </span>
+      }
+    </div>
   </div>
 </div>
-@if (feedback === 'correct') {
-  <span class="text-green-500 text-4xl">✓</span>
-  } @else if (feedback === 'incorrect') {
-  <span class="text-red-500 text-4xl">X</span>
-  }
