@@ -1,9 +1,9 @@
 <div>
-  <p>{{targetEmoji}}</p>
-  <input type="text" [value]="currentInput"/>
+  <p (click)="utterTargetWord()">{{ targetEmoji }}</p>
+  <input type="text" [value]="currentInput" />
   <div class="flex gap-2">
-      @for(letter of availableLetters; track $index) {
-       <button (click)="addLetter(letter)">{{letter}}</button>
-      }
+    @for(letter of availableLetters; track $index) {
+    <button (click)="addLetter(letter)">{{ letter }}</button>
+    }
   </div>
 </div>

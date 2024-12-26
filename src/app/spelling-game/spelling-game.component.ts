@@ -44,6 +44,13 @@ export class SpellingGameComponent implements OnInit {
   // TODO
   checkIfCorrect() {}
 
+  utterTargetWord() {
+    const utterance = new SpeechSynthesisUtterance(this.targetWord);
+    utterance.lang = 'es-US';
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+  }
+
   async ngOnInit(): Promise<void> {
     this.loadNewWord();
   }
