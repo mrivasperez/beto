@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WordList, wordListMap } from '../../data/spanish/wordListMap';
+import { Word, WordList, wordListMap } from '../../data/spanish/wordListMap';
 import { alphabet } from '../../data/spanish/alphabet';
 
 @Injectable({
@@ -12,12 +12,12 @@ export class WordsService {
     return alphabet;
   }
 
-  async getRandomWord(): Promise<string> {
+  async getRandomWord(): Promise<Word> {
     const letters = this.getAvailableLetters();
     const randomLetter = letters[Math.floor(Math.random() * letters.length)];
     const module = await wordListMap['spanish'][randomLetter]();
     const words = module.words;
-    return words[Math.floor(Math.random() * words.length)].word;
+    return words[Math.floor(Math.random() * words.length)];
   }
 
   async getWordsForLetter(letter: string): Promise<WordList> {
