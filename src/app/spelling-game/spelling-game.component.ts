@@ -26,7 +26,6 @@ export class SpellingGameComponent implements OnInit {
     }
 
     this.availableLetters = Array.from(letters).sort(() => Math.random() - 0.5);
-    console.log(this.availableLetters, this.targetEmoji, this.targetWord);
   }
 
   async loadNewWord() {
