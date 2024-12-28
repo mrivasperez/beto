@@ -15,7 +15,9 @@ export class AlphabetGridComponent {
   currentInput = '';
   placeholder = 'alfabeto';
   pressTimer: any;
-  isHighlighted = false;
+  isGameHighlighted = false;
+  isVoiceInputHighlighted = false;
+
   constructor(private router: Router) {}
 
   onLetterClick(letter: string) {
@@ -46,16 +48,30 @@ export class AlphabetGridComponent {
   }
 
   navigateToGame() {
-    if (!this.isHighlighted) {
-      this.isHighlighted = true;
+    if (!this.isGameHighlighted) {
+      this.isGameHighlighted = true;
       const utterance = new SpeechSynthesisUtterance('Juego de deletreo');
       utterance.lang = 'es-US';
       window.speechSynthesis.speak(utterance);
       setTimeout(() => {
-        this.isHighlighted = false;
+        this.isGameHighlighted = false;
       }, 5000);
     } else {
       this.router.navigate(['/game']);
+    }
+  }
+
+  navigateToVoiceInput() {
+    if (!this.isVoiceInputHighlighted) {
+      this.isVoiceInputHighlighted = true;
+      const utterance = new SpeechSynthesisUtterance('Entrada de Voz');
+      utterance.lang = 'es-US';
+      window.speechSynthesis.speak(utterance);
+      setTimeout(() => {
+        this.isVoiceInputHighlighted = false;
+      }, 5000);
+    } else {
+      this.router.navigate(['/voice']);
     }
   }
 }
