@@ -1,9 +1,9 @@
 <div class="flex justify-center items-start">
   <div class="p-4 w-full max-w-screen-lg">
     <div class="my-4 text-center">
-      <p (click)="utterTargetWord()" class="text-9xl cursor-pointer">
+      <button (click)="utterTargetWord()" class="text-9xl cursor-pointer">
         {{ targetEmoji }}<span class="text-xl">🔊</span>
-      </p>
+      </button>
       <input
         type="text"
         [value]="currentInput"
