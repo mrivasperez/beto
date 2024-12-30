@@ -1,1 +1,42 @@
-<p>navbar works!</p>
+<nav
+  class="sticky top-2 bg-gray-50 p-2 py-2 m-2 rounded shadow-sm border w-100"
+>
+  <ul class="flex space-x-3 justify-center">
+    <li>
+      <button
+        (click)="navigateToAlphabet()"
+        class="px-3 py-2 rounded-md font-medium"
+        [class.hover:bg-blue-100]="activeRoute !== ''"
+        [class.bg-blue-700]="activeRoute === ''"
+        [class.text-white]="activeRoute === ''"
+        [class.bg-blue-100]="isAlphabetHighlighted && activeRoute !== ''"
+      >
+        🔡 <span class="hidden md:inline">Alfabeto</span>
+      </button>
+    </li>
+    <li>
+      <button
+        (click)="navigateToGame()"
+        class="px-3 py-2 rounded-md font-medium"
+        [class.hover:bg-blue-100]="activeRoute !== 'game'"
+        [class.bg-blue-700]="activeRoute === 'game'"
+        [class.text-white]="activeRoute === 'game'"
+        [class.bg-blue-100]="isGameHighlighted && activeRoute !== 'game'"
+      >
+        🎯 <span class="hidden md:inline">Juego de Deletreo</span>
+      </button>
+    </li>
+    <li>
+      <button
+        (click)="navigateToVoiceInput()"
+        class="px-3 py-2 rounded-md font-medium"
+        [class.hover:bg-blue-100]="activeRoute !== 'voice'"
+        [class.bg-blue-700]="activeRoute === 'voice'"
+        [class.text-white]="activeRoute === 'voice'"
+        [class.bg-blue-100]="isVoiceInputHighlighted && activeRoute !== 'voice'"
+      >
+        🎙️ <span class="hidden md:inline">Entrada de Voz</span>
+      </button>
+    </li>
+  </ul>
+</nav>
