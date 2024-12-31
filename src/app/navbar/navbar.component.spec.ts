@@ -5,14 +5,13 @@ import {
   tick,
 } from '@angular/core/testing';
 import { NavbarComponent } from './navbar.component';
-import { RouterTestingModule } from '@angular/router/testing';
 import {
   Router,
   NavigationEnd,
   ActivatedRoute,
   RouterModule,
 } from '@angular/router';
-import { of, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
