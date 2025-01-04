@@ -68,15 +68,15 @@ describe('WordComponent', () => {
   }));
 
   it('should set isHighlighted to false when onend event is triggered', fakeAsync(() => {
-    // Arrange
+    // Arrange - isHighlighted is true initially when calling speakWord()
     component.word = 'hola';
-    component.isHighlighted = true; // isHighlighted is true initially when calling speakWord()
+    component.isHighlighted = true; 
 
-    // Act
-    component.speakWord(); // Call speakWord to initiate speech synthesis
+    // Act - Call speakWord to initiate speech synthesis
+    component.speakWord(); 
     tick(500);
 
-    // Assert
-    expect(component.isHighlighted).toBe(false); // isHighlighted should be false after onend
+    // Assert - isHighlighted should be false after onend
+    expect(component.isHighlighted).toBe(false); 
   }));
 });
