@@ -1,58 +1,54 @@
-import { TestBed } from '@angular/core/testing';
-import { WordsService } from './words.service';
-import { wordListMap, Word } from '../../data/spanish/wordListMap';
-import { alphabet } from '../../data/spanish/alphabet';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { WordsListComponent } from './words-list.component';
+import { ActivatedRoute, convertToParamMap } from '@angular/router';
+import { BehaviorSubject, of } from 'rxjs';
+import { WordComponent } from '../shared/word/word.component';
+import { By } from '@angular/platform-browser';
 
-describe('WordsService', () => {
-  let service: WordsService;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(WordsService);
+describe('WordsListComponent', () => {
+  let component: WordsListComponent;
+  let fixture: ComponentFixture<WordsListComponent>;
+  let route: ActivatedRoute;
+  const paramsSubject = new BehaviorSubject({
+    letter: 'a',
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [WordsListComponent, WordComponent],
+      providers: [
+        { provide: ActivatedRoute, useValue: { params: paramsSubject } },
+      ],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(WordsListComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+    route = TestBed.inject(ActivatedRoute);
   });
 
-  it('should get available letters', () => {
-    const letters = service.getAvailableLetters();
-    expect(letters).toEqual(alphabet);
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
 
-  it('should get words for a specific letter', async () => {
-    const letter = 'a';
-    const mockWords: Word[] = [{ word: 'apple', emoji: '🍎' }];
-
-    // Mock the dynamic import
-    spyOn(wordListMap['spanish'], letter).and.returnValue(
-      Promise.resolve({ words: mockWords })
-    );
-
-    const words = await service.getWordsForLetter(letter);
-    expect(words).toEqual(mockWords);
+  it('should display a back button', () => {
+    const backButton = fixture.debugElement.query(
+      By.css('#back-button')
+    ).nativeElement;
+    expect(backButton).toBeTruthy();
+    expect(backButton.textContent).toContain('⬅️');
+    expect(backButton.href).toContain('/');
   });
 
-  it('should return an empty array if the letter is invalid', async () => {
-    const letter = 'invalid';
-
-    // Mock the dynamic import to simulate an error
-    spyOn(wordListMap['spanish'], 'a').and.throwError('Invalid letter');
-
-    const words = await service.getWordsForLetter(letter);
-    expect(words).toEqual([]);
+  it('should navigate to the home page when the back button is clicked', () => {
+    const backButton = fixture.debugElement.query(By.css('#back-button'));
+    const href = backButton.nativeElement.getAttribute('href');
+    expect(href).toBe('/');
   });
 
-  it('should get a random word', async () => {
-    const mockWord: Word = { word: 'test', emoji: '🧪' };
-
-    // Mock getAvailableLetters and dynamic import
-    spyOn(service, 'getAvailableLetters').and.returnValue(['a']);
-    spyOn(wordListMap['spanish'], 'a').and.returnValue(
-      Promise.resolve({ words: [mockWord] })
-    );
-
-    const word = await service.getRandomWord();
-    expect(word).toEqual(mockWord);
+  it('should get letter from route params', () => {
+    route.params.subscribe((params) => {
+      expect(params['letter']).toBe('a');
+    });
   });
 });
